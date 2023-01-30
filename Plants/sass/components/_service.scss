@@ -1,0 +1,108 @@
+.service {
+  background: $color-background;
+  overflow: hidden;
+}
+
+.services {
+  padding-left: 116px;
+  max-width: 330px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  @include media-small-laptop {
+    padding-left: 50px;
+    padding-bottom: 38px;
+  }
+  @include media-low-tablet {
+    padding-left: 0;
+  }
+}
+
+.services_selected {
+  filter: blur(2px);
+  transition: all .5s;
+}
+
+.services_unselected {
+  transition: all .5s;
+}
+
+.service-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  @include media-small-laptop {
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 40px;
+  }
+}
+
+.service__main {
+  color: $color_important;
+  margin-left: 109px;
+  margin-right: 142px;
+  max-width: 306px;
+  @include media-big-tablet {
+    margin: 60px 40px 40px 50px;
+  }
+}
+
+.service__title {
+  color: $color-backlight;
+  margin: 10px;
+}
+
+.service__text {
+  color: $color-text;
+  @include font(normal, 400, 16px, 20px);
+}
+
+.service-buttons>.button {
+  margin-left: 38px;
+  @include media-low-tablet {
+    margin-left: 10px;
+  }
+}
+
+.service-buttons>.button:first-child {
+  margin-left: 38px;
+  margin-left: 0;
+}
+
+.service-buttons>.button:last-child {
+  @include media-low-tablet {
+    margin-left: 0;
+    margin-top: 9px;
+  }
+}
+
+.services-body {
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.services_image {
+  width: 330px;
+  height: 350px;
+  @include media-low-tablet {
+    width: auto;
+  }
+}
+
+.image-rectangle-png-high {
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.image-rectangle-png-low {
+  text-align:left;
+  display: none;
+  @include media-tablet {
+    display: block;
+  }
+}
+

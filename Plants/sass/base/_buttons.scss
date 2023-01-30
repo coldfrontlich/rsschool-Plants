@@ -1,0 +1,97 @@
+.button {
+  border: 1px solid $color-backlight;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.button-welcome {
+  padding: 14px 27px 14px;
+  font-family: 'Inter', Verdana, sans-serif;
+  color:black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 8px;
+  background-color: $color-background;
+  text-align: center;
+  border: 2px solid $color-backlight;
+  @include media-mobile {
+    padding: 8px 18px;
+    width: 105px;
+    height: 34px;
+    @include font(normal, 400, 10px, 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.button-service {
+  padding: 11px 30px 11px;
+  background: $color-background;
+  color: $color-backlight;
+  font-family: "Inika", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.6rem;
+  width: 161px;
+  border-radius: 5px;
+  @include media-low-tablet {
+    width: 121px;
+    height: 35px;
+    padding: 8px 28px 7px 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.button-service_selected {
+  color: white;
+  background: $color-backlight;
+}
+
+.button-service_unselected {
+  color: $color-backlight;
+  background: $color-background;
+}
+
+.button-price {
+  padding: 12px 30px 12px;
+  color: $color-backlight;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 39px;
+  font-family: 'Inika', Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  @include media-low-tablet {
+    @include font(normal, 700, 15px, 20px);
+    padding: 8px 22px;
+    width: 121px;
+    height: 35px;
+  }
+}
+
+.button:hover {
+  color: white;
+  background: $color-backlight;
+}
+
+.service-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 559px;
+  @include media-low-tablet {
+    display: block;
+    max-width: 300px;
+    margin-left: 2em;
+  }
+}

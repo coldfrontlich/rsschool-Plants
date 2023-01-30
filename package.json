@@ -1,0 +1,23 @@
+{
+  "name": "coldfrontlich-jsfepreschool2022q4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch Plants/sass/style.scss Plants/sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/coldfrontlich-JSFEPRESCHOOL2022Q4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/coldfrontlich-JSFEPRESCHOOL2022Q4/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/coldfrontlich-JSFEPRESCHOOL2022Q4#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}

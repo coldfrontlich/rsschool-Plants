@@ -1,0 +1,16 @@
+.layout-3-column {
+  @include columns($width: 30%);
+  flex-direction: row;
+  align-content: space-between;
+  min-height: 955px;
+  padding-bottom: 121px;
+  justify-content: space-around;
+  @include media-big-tablet {
+    padding-bottom: 70px;
+  }
+  @include media-low-tablet {
+    flex-direction: column;
+    align-content: center;
+    padding-bottom: 0;
+  }
+}

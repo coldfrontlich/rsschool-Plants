@@ -1,0 +1,129 @@
+.prices_wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 560px;
+  padding-top: 40px;
+  margin: 0 109px;
+  @include media-big-tablet {
+    margin: 0;
+    padding-top: 0;
+    min-height: 500px;
+    padding-bottom: 88px;
+  }
+  @include media-low-tablet {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
+
+.prices {
+  margin-left: 25px;
+  overflow: hidden;
+  @include media-big-tablet {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+.prices-top {
+  @include media-low-tablet {
+    text-align: center;
+  }
+}
+
+.prices-topic {
+  font-family: "Inter", Verdana, sans-serif;
+  @include font(normal, 700, 40px, 48px);
+  margin-bottom: 60px;
+  @include media-big-tablet {
+    @include font(normal, 700, 35px, 42px);
+    margin-bottom: 50px;
+  }
+  @include media-low-tablet {
+    @include font(normal, 700, 25px, 30px);
+    margin-bottom: 40px;
+  }
+}
+
+.prices-items {
+  padding: 34px 41px;
+  padding-bottom: 65px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  width: 250px;
+  height: 214px;
+  list-style: none;
+  @include media-low-tablet {
+    padding: 29px 22px;
+    padding-bottom: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.prices-item {
+  padding: 16px 40px;
+  background: $color-background;
+  border-radius: 20px;
+  @include font(normal, 700, 20px, 20px);
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include media-big-tablet {
+    margin-bottom: 32px;
+  }
+  @include media-low-tablet {
+    margin-bottom: 14px;
+    @include font(normal, 700, 15px, 20px);
+    justify-content: space-around;
+  }
+}
+
+.price-arrow {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-content {
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @include media-small-laptop {
+    margin-left: 4rem;
+    padding-top: 90px;
+  }
+  @include media-low-tablet {
+    padding-top: 0;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+.prices-main {
+  color: $color-important;
+}
+
+.prices-text {
+  @include font(normal, 700, 40px, 50px);
+  text-align: right;
+  max-width: 452px;
+  @include media-big-tablet {
+    @include font(normal, 700, 25px, 35px);
+  }
+  @include media-low-tablet {
+    @include font(normal, 700, 20px, 35px);
+    text-align: center;
+  }
+}
+
+.price-image-svg {
+  @include media-low-tablet {
+    display: none;
+  }
+}

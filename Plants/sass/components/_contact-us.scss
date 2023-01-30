@@ -1,0 +1,85 @@
+.contacts {
+  background-color: $color-background;
+  overflow: hidden;
+}
+
+.contacts_wrapper {
+  display: flex;
+  max-width: 1250px;
+  padding-top: 53px;
+  @include media-big-tablet {
+    flex-direction: column-reverse;
+    padding-top: 7px;
+  }
+}
+
+.contacts-woman {
+  margin-right: 113px;
+  @include media-small-laptop {
+    margin-right: 0;
+  }
+  @include media-big-tablet {
+    width: 200px;
+    height: 249px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+  }
+  @include media-small-tablet {
+    margin-top: 132px;
+    width: 100px;
+    height: 125px;
+  }
+}
+
+.contacts-title {
+  font-weight: 700;
+  color: $color-important;
+  margin-bottom: 37px;
+  @include media-big-tablet {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  @include media-small-tablet {
+    margin-bottom: 80px;
+    @include font(normal, 700, 25px, 33px);
+  }
+}
+
+.contacts-select {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 264px;
+  @include media-small-laptop {
+    margin-left: 0;
+  }
+  @include media-big-tablet {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+.select-city {
+  color: $color-about;
+  padding: 0 35px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #D6E7D2;
+  height: 50px;
+  width: 450px;
+  font-size: 20px;
+  align-items: center;
+  @include media-low-tablet {
+    width: 245px;
+  }
+}
+
+.select-arrow {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #aea1a1;
+  border-radius: 50%;
+}

@@ -1,0 +1,28 @@
+.header {
+  background-color: $color-background;
+  background-repeat: repeat;
+  padding: 42px 109px 42px 111px;
+  overflow: hidden;
+  @include media-big-tablet {
+    padding: 40px 70px;
+  }
+  @include media-tablet {
+    padding: 35px 50px;
+  }
+  @include media-mobile {
+    padding: 36px 25px;
+  }
+  
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+}
