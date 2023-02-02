@@ -161,14 +161,73 @@
         <div class="contact-content">
           <h2 class="contacts-title">Contact us</h2>
           <div class="contacts-select">
-            <div class="select-city">
-              City
-              <div class="select-arrow">
-                <img src="Plants/images/arrow.svg" alt="arrow">
+            <div class="dropdown-contacts">
+              <div class="select-city select-city_unactive" data-dropdown>
+                City
+                <img class="select-arrow select-arrow_unactive" src="Plants/images/arrow.svg" alt="arrow" data-dropdown-button>
+                <div class="dropdown-contacts-menu dropdown-contacts-menu_unactive">
+                  <ul class="contact-list">
+                    <li class="contact-list-item">Canadaigua, NY</li>
+                    <span class="contact-line"></span>
+                    <li class="contact-list-item">New York City</li>
+                    <span class="contact-line"></span>
+                    <li class="contact-list-item">Younkers</li>
+                    <span class="contact-line"></span>
+                    <li class="contact-list-item">Sheril, NY</li>
+                    <span class="contact-line"></span>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <div class="city-card city-card__Canandaigua_unactive">
+            <div class="info-city">
+              <ul class="info-city-list">
+                <li class="info-city-list-item">City: <span class="info-city-list-item-about">Canandaigua, NY</span></li>
+                <li class="info-city-list-item">Phone: <span class="info-city-list-item-about">+1	585	393 0001</span></li>
+                <li class="info-city-list-item">Office adress: <span class="info-city-list-item-about">151 Charlotte Street</span></li>
+              </ul>
+            </div>
+            <div class="button-call-block">
+              <button class="button button-call">Call us</button>
+            </div>
+          </div>
+          <div class="city-card city-card__New-York_unactive">
+            <div class="info-city">
+              <ul class="info-city-list">
+                <li class="info-city-list-item">City: <span class="info-city-list-item-about">New York City</span></li>
+                <li class="info-city-list-item">Phone: <span class="info-city-list-item-about">+1	212	456 0002</span></li>
+                <li class="info-city-list-item">Office adress: <span class="info-city-list-item-about">9 East 91st Street</span></li>
+              </ul>
+            </div>
+            <div class="button-call-block">
+              <button class="button button-call">Call us</button>
+            </div>
+          </div>
+          <div class="city-card city-card__Yonkers_unactive">
+            <div class="info-city">
+              <ul class="info-city-list">
+                <li class="info-city-list-item">City: <span class="info-city-list-item-about">Yonkers, NY</span></li>
+                <li class="info-city-list-item">Phone: <span class="info-city-list-item-about">+1	914	678 0003</span></li>
+                <li class="info-city-list-item">Office adress: <span class="info-city-list-item-about">511 Warburton Ave</span></li>
+              </ul>
+            </div>
+            <div class="button-call-block">
+              <button class="button button-call">Call us</button>
+            </div>
+          </div>
+          <div class="city-card city-card__Sherrill_unactive">
+            <div class="info-city">
+              <ul class="info-city-list">
+                <li class="info-city-list-item">City: <span class="info-city-list-item-about">Sherrill, NY</span></li>
+                <li class="info-city-list-item">Phone: <span class="info-city-list-item-about">+1	315	908 0004</span></li>
+                <li class="info-city-list-item">Office adress: <span class="info-city-list-item-about">14 WEST Noyes BLVD</span></li>
+              </ul>
+            </div>
+            <div class="button-call-block">
+              <button class="button button-call">Call us</button>
+            </div>
+          </div>
       </div>
     </section>
   </main>
@@ -209,5 +268,6 @@
   </footer>
   <script src="Plants/js/hamburger.js"></script>
   <script src="Plants/js/buttons.js"></script>
+  <script src="Plants/js/contactButton.js"></script>
 </body>
 </html>

@@ -95,3 +95,18 @@
     margin-left: 2em;
   }
 }
+
+.button-call-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-call {
+  border-radius: 5px;
+  font-family: "Inter", Verdana, sans-serif;
+  @include font(normal, 400, 10px, 13px);
+  width: 122px;
+  height: 26px;
+  background-color: $color-background;
+}
