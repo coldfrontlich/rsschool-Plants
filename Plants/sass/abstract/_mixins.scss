@@ -21,6 +21,10 @@
   @media (max-width: 1325px) { @content };
 }
 
+@mixin media-verysmall-laptop {
+  @media (max-width: 1140px) { @content};
+}
+
 @mixin media-big-tablet {
   @media (max-width: 850px) { @content; }
 }

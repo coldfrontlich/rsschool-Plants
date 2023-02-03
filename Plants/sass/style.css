@@ -640,6 +640,7 @@ h4 {
 
 .dropdown-contacts {
   position: relative;
+  z-index: 1;
 }
 
 .dropdown-contacts-menu {
@@ -673,50 +674,31 @@ h4 {
   width: 440px;
   height: 214px;
 }
+@media (max-width: 1140px) {
+  .city-card {
+    margin-left: 0;
+  }
+}
+@media (max-width: 850px) {
+  .city-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 640px) {
+  .city-card {
+    width: 300px;
+    height: 250px;
+  }
+}
 
-.city-card__Canandaigua_unactive {
+.city-card_unactive {
   display: none;
   opacity: 0;
   transition: all 0.3s;
 }
 
-.city-card__Canandaigua_active {
-  display: block;
-  opacity: 1;
-  transition: all 0.3s;
-}
-
-.city-card__New-York_unactive {
-  display: none;
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.city-card__New-York_active {
-  display: block;
-  opacity: 1;
-  transition: all 0.3s;
-}
-
-.city-card__Yonkers_unactive {
-  display: none;
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.city-card__Younkers_active {
-  display: block;
-  opacity: 1;
-  transition: all 0.3s;
-}
-
-.city-card__Sherrill_unactive {
-  display: none;
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.city-card__Sherrill_active {
+.city-card_active {
   display: block;
   opacity: 1;
   transition: all 0.3s;
@@ -731,6 +713,11 @@ h4 {
   color: #717171;
   margin-right: 100px;
 }
+@media (max-width: 640px) {
+  .info-city-list-item-about {
+    margin-right: 50px;
+  }
+}
 
 .info-city-list-item {
   list-style-type: none;
@@ -743,6 +730,11 @@ h4 {
   justify-content: space-between;
   align-items: center;
   margin-left: 35px;
+}
+@media (max-width: 640px) {
+  .info-city-list-item {
+    margin-left: 10px;
+  }
 }
 
 .info-city-list {
@@ -1326,6 +1318,17 @@ h4 {
   }
 }
 
+@media (max-width: 850px) {
+  .contact-content {
+    padding-bottom: 270px;
+  }
+}
+@media (max-width: 566px) {
+  .contact-content {
+    padding-bottom: 150px;
+  }
+}
+
 .contacts-woman {
   margin-right: 113px;
 }
@@ -1340,12 +1343,10 @@ h4 {
     height: 249px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 250px;
   }
 }
 @media (max-width: 566px) {
   .contacts-woman {
-    margin-top: 132px;
     width: 100px;
     height: 125px;
   }
@@ -1382,8 +1383,14 @@ h4 {
     margin-left: 0;
   }
 }
+@media (max-width: 1140px) {
+  .contacts-select {
+    display: block;
+  }
+}
 @media (max-width: 850px) {
   .contacts-select {
+    display: flex;
     justify-content: center;
     margin-left: 0;
   }
@@ -1405,6 +1412,16 @@ h4 {
   .select-city {
     width: 245px;
   }
+}
+
+.select-city-span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  user-select: none;
+  transition: all 0.3s;
 }
 
 .select-city_unactive {
@@ -1456,6 +1473,24 @@ h4 {
   font-size: 16px;
   line-height: 40px;
   letter-spacing: 0.05em;
+  transition: all 0.3s;
+}
+
+.contact-list-item_unactive {
+  transition: all 0.3s;
+}
+
+.contact-list-item_active {
+  color: #717171;
+  transition: all 0.3s;
+}
+
+.contact-line_unactive {
+  transition: all 0.3s;
+}
+
+.contact-line_active {
+  background-color: #717171;
   transition: all 0.3s;
 }
 

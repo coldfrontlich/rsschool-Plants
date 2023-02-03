@@ -6,51 +6,26 @@
   margin-left: 264px;
   width: 440px;
   height: 214px;
+  @include media-verysmall-laptop {
+    margin-left: 0;
+  }
+  @include media-big-tablet {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include media-low-tablet {
+    width: 300px;
+    height: 250px;
+  }
 }
 
-.city-card__Canandaigua_unactive {
+.city-card_unactive {
   display: none;
   opacity: 0;
   transition: all .3s;
 }
 
-.city-card__Canandaigua_active {
-  display: block;
-  opacity: 1;
-  transition: all .3s;
-}
-
-.city-card__New-York_unactive {
-  display: none;
-  opacity: 0;
-  transition: all .3s;
-}
-
-.city-card__New-York_active {
-  display: block;
-  opacity: 1;
-  transition: all .3s;
-}
-
-.city-card__Yonkers_unactive {
-  display: none;
-  opacity: 0;
-  transition: all .3s;
-}
-
-.city-card__Younkers_active {
-  display: block;
-  opacity: 1;
-  transition: all .3s;
-}
-
-.city-card__Sherrill_unactive {
-  display: none;
-  opacity: 0;
-  transition: all .3s;
-}
-
-.city-card__Sherrill_active {
+.city-card_active {
   display: block;
   opacity: 1;
   transition: all .3s;
@@ -61,6 +36,9 @@
   letter-spacing: 0.05em;
   color: $color-about;
   margin-right: 100px;
+  @include media-low-tablet {
+    margin-right: 50px;
+  }
 }
 
 .info-city-list-item {
@@ -71,6 +49,10 @@
   justify-content:space-between;
   align-items: center;
   margin-left: 35px;
+  @include media-low-tablet {
+    margin-left: 10px;
+  }
+
 }
 
 .info-city-list {

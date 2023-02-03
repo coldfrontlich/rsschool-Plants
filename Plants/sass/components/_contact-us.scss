@@ -13,6 +13,15 @@
   }
 }
 
+.contact-content {
+  @include media-big-tablet {
+    padding-bottom: 270px;
+  }
+  @include media-small-tablet {
+    padding-bottom: 150px;
+  }
+}
+
 .contacts-woman {
   margin-right: 113px;
   @include media-small-laptop {
@@ -23,10 +32,8 @@
     height: 249px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 250px;
   }
   @include media-small-tablet {
-    margin-top: 132px;
     width: 100px;
     height: 125px;
   }
@@ -53,7 +60,11 @@
   @include media-small-laptop {
     margin-left: 0;
   }
+  @include media-verysmall-laptop {
+    display: block;
+  }
   @include media-big-tablet {
+    display: flex;
     justify-content: center;
     margin-left: 0;
   }
@@ -73,6 +84,13 @@
   @include media-low-tablet {
     width: 245px;
   }
+}
+
+.select-city-span {
+  @include font(normal, 400, 20px, 40px);
+  letter-spacing: 0.05em;
+  user-select: none;
+  transition: all .3s;
 }
 
 .select-city_unactive {
@@ -124,6 +142,24 @@
   font-size: 16px;
   line-height: 40px;
   letter-spacing: 0.05em;
+  transition: all .3s;
+}
+
+.contact-list-item_unactive {
+  transition: all .3s;
+}
+
+.contact-list-item_active {
+  color: $color-about;
+  transition: all .3s;
+}
+
+.contact-line_unactive {
+  transition: all .3s;
+}
+
+.contact-line_active {
+  background-color: $color-about;
   transition: all .3s;
 }
 
