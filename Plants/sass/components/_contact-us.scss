@@ -13,15 +13,6 @@
   }
 }
 
-.contact-content {
-  @include media-big-tablet {
-    padding-bottom: 270px;
-  }
-  @include media-small-tablet {
-    padding-bottom: 150px;
-  }
-}
-
 .contacts-woman {
   margin-right: 113px;
   @include media-small-laptop {
@@ -36,6 +27,18 @@
   @include media-small-tablet {
     width: 100px;
     height: 125px;
+  }
+}
+
+.contacts-woman_unactive {
+  @include media-big-tablet {
+    margin-top: 270px;
+  }
+}
+
+.contacts-woman_active {
+  @include media-big-tablet {
+    margin-top: 5px;
   }
 }
 

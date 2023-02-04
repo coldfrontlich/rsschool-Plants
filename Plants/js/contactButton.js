@@ -33,6 +33,7 @@ document.querySelector('.contact-list').addEventListener('click', (e) => {
     changeCityColor(e.target.parentElement.parentElement.parentElement);
     closeAllCards();
     openCard(e.target.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling);
+    settingImage(e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.previousElementSibling);
   }
   if (isNewYorkItem) {
     changeMenuText(e.target);
@@ -42,6 +43,7 @@ document.querySelector('.contact-list').addEventListener('click', (e) => {
     changeCityColor(e.target.parentElement.parentElement.parentElement);
     closeAllCards();
     openCard(e.target.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.nextElementSibling);
+    settingImage(e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.previousElementSibling);
   }
   if (isYonkersItem) {
     changeMenuText(e.target);
@@ -51,6 +53,7 @@ document.querySelector('.contact-list').addEventListener('click', (e) => {
     changeCityColor(e.target.parentElement.parentElement.parentElement);
     closeAllCards();
     openCard(e.target.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.nextElementSibling.nextElementSibling);
+    settingImage(e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.previousElementSibling);
   }
   if (isSherrillItem) {
     changeMenuText(e.target);
@@ -60,6 +63,7 @@ document.querySelector('.contact-list').addEventListener('click', (e) => {
     changeCityColor(e.target.parentElement.parentElement.parentElement);
     closeAllCards();
     openCard(e.target.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling);
+    settingImage(e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.previousElementSibling);
   }
 })
 
@@ -123,4 +127,9 @@ const closeAllCards = () => {
     card.classList.remove('city-card_active');
     card.classList.add('city-card_unactive');
   })
+}
+
+const settingImage = (image) => {
+  image.classList.add('contacts-woman_active');
+  image.classList.remove('contacts-woman_unactive');
 }

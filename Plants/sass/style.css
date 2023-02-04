@@ -1318,17 +1318,6 @@ h4 {
   }
 }
 
-@media (max-width: 850px) {
-  .contact-content {
-    padding-bottom: 270px;
-  }
-}
-@media (max-width: 566px) {
-  .contact-content {
-    padding-bottom: 150px;
-  }
-}
-
 .contacts-woman {
   margin-right: 113px;
 }
@@ -1349,6 +1338,18 @@ h4 {
   .contacts-woman {
     width: 100px;
     height: 125px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contacts-woman_unactive {
+    margin-top: 270px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contacts-woman_active {
+    margin-top: 5px;
   }
 }
 
