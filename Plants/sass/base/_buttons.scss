@@ -110,3 +110,25 @@
   height: 26px;
   background-color: $color-background;
 }
+
+.button-accordion {
+  width: 86px;
+  height: 25px;
+  margin-left: 40px;
+  margin-right: 20px;
+  color: $color-about;
+  @include font(normal, 700, 14px, 20px);
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: all .3s;
+  @include media-low-tablet {
+    margin-left: 25px;
+    margin-bottom: 14px;
+  }
+}
+
+.button-accordion:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}

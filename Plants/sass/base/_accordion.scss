@@ -1,0 +1,68 @@
+.accordion {
+  width: 250px;
+  height: 132px;
+  background-color: #D6E7D2;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20px 20px;
+  @include media-low-tablet {
+    width: auto;
+    height: auto;
+  }
+}
+
+.accordion_unactive {
+  display: none;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.accordion_active {
+  display: block;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.accordion-line {
+  position: absolute;
+  height: 1px;
+  width: 170px;
+  background: #AEA1A1;
+  margin-left: 40px;
+  margin-right: 20px;
+  @include media-low-tablet {
+    visibility: hidden;
+  }
+}
+
+.accordion-text {
+  @include font(normal, 300, 10px, 10px);
+  color: $color-about;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-block-start: 0;
+  padding-top: 1rem;
+  @include media-low-tablet {
+    margin-left: 25px;
+  }
+}
+
+.accordion-price {
+  @include font(normal, 400, 12px, 20px);
+  margin-left: 40px;
+  margin-right: 20px;
+  @include media-low-tablet {
+    margin-left: 25px;
+  }
+}
+
+.accordion-dollar {
+  @include font(normal, 400, 12px, 20px);
+  color: $color-backlight;
+}
+
+.accordion-lighttext {
+  @include font(normal, 700, 16px, 20px);
+  color: $color-backlight;
+}

@@ -581,6 +581,33 @@ h4 {
   background-color: #EDF2EC;
 }
 
+.button-accordion {
+  width: 86px;
+  height: 25px;
+  margin-left: 40px;
+  margin-right: 20px;
+  color: #717171;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+@media (max-width: 640px) {
+  .button-accordion {
+    margin-left: 25px;
+    margin-bottom: 14px;
+  }
+}
+
+.button-accordion:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .hamburger {
   position: relative;
   width: 40px;
@@ -636,6 +663,95 @@ h4 {
   transform: translateY(6px);
   transition: transform 0.3s ease-in-out;
   opacity: 10;
+}
+
+.accordion {
+  width: 250px;
+  height: 132px;
+  background-color: #D6E7D2;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20px 20px;
+}
+@media (max-width: 640px) {
+  .accordion {
+    width: auto;
+    height: auto;
+  }
+}
+
+.accordion_unactive {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.accordion_active {
+  display: block;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.accordion-line {
+  position: absolute;
+  height: 1px;
+  width: 170px;
+  background: #AEA1A1;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+@media (max-width: 640px) {
+  .accordion-line {
+    visibility: hidden;
+  }
+}
+
+.accordion-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #717171;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-block-start: 0;
+  padding-top: 1rem;
+}
+@media (max-width: 640px) {
+  .accordion-text {
+    margin-left: 25px;
+  }
+}
+
+.accordion-price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+@media (max-width: 640px) {
+  .accordion-price {
+    margin-left: 25px;
+  }
+}
+
+.accordion-dollar {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #E06733;
+}
+
+.accordion-lighttext {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #E06733;
 }
 
 .dropdown-contacts {
@@ -1575,22 +1691,18 @@ h4 {
 }
 
 .prices-items {
-  padding: 34px 41px;
-  padding-bottom: 65px;
+  padding: 34px 41px 0 41px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
   width: 250px;
-  height: 214px;
   list-style: none;
 }
 @media (max-width: 640px) {
   .prices-items {
-    padding: 29px 22px;
-    padding-bottom: 34px;
+    padding: 29px 22px 0 22px;
     margin-left: auto;
     margin-right: auto;
     width: 180px;
-    height: 180px;
   }
 }
 
@@ -1623,11 +1735,26 @@ h4 {
   }
 }
 
+.prices-item_active {
+  margin-bottom: 0;
+  border-radius: 20px 20px 0 0;
+  background: #D6E7D2;
+}
+
 .price-arrow {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.price-arrow_unactive {
+  transition: all 0.3s;
+}
+
+.price-arrow_active {
+  transform: rotate(180deg);
+  transition: all 0.3s;
 }
 
 .price-content {
