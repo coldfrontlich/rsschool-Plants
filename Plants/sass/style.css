@@ -931,7 +931,9 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 109px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 @media (max-width: 850px) {
   .footer_wrapper {
@@ -1629,7 +1631,9 @@ h4 {
   justify-content: space-between;
   min-height: 560px;
   padding-top: 40px;
-  margin: 0 109px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media (max-width: 850px) {
   .prices_wrapper {

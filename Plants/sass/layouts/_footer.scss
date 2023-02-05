@@ -6,7 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 109px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
   @include media-big-tablet {
     flex-direction: column;
     margin-left: auto;
