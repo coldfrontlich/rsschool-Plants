@@ -1547,6 +1547,10 @@ h4 {
   transition: all 0.3s;
 }
 
+.select-city_unactive:hover {
+  background: #C1E698;
+}
+
 .select-city_active {
   background: #C1E698;
   transition: all 0.3s;
@@ -1737,6 +1741,11 @@ h4 {
     line-height: 20px;
     justify-content: space-around;
   }
+}
+
+.prices-item_unactive:hover {
+  background: #D6E7D2;
+  transition: all 0.3s;
 }
 
 .prices-item_active {

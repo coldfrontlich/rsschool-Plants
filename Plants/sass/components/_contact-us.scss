@@ -100,6 +100,10 @@
   transition: all .3s;
 }
 
+.select-city_unactive:hover {
+  background: #C1E698;
+}
+
 .select-city_active {
   background: #C1E698;
   transition: all .3s;

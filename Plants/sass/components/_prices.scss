@@ -80,6 +80,11 @@
   }
 }
 
+.prices-item_unactive:hover {
+  background: #D6E7D2;
+  transition: all .3s;
+}
+
 .prices-item_active {
   margin-bottom: 0;
   border-radius: 20px 20px 0 0;
